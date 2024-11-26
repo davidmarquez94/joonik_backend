@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Location;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class LocationsSeeder extends Seeder
@@ -78,7 +77,7 @@ class LocationsSeeder extends Seeder
             ['code' => 'IR', 'name' => 'Iran', 'image' => 'https://flagcdn.com/w320/ir.png', 'created_at' => now()],
             ['code' => 'IS', 'name' => 'Iceland', 'image' => 'https://flagcdn.com/w320/is.png', 'created_at' => now()],
             ['code' => 'IT', 'name' => 'Italy', 'image' => 'https://flagcdn.com/w320/it.png', 'created_at' => now()],
-            ['code' => 'JM', 'name' => 'Jamaica', 'image' => 'https://flagcdn.com/w320/jm.png', 'created_at' => now()]
+            ['code' => 'JM', 'name' => 'Jamaica', 'image' => 'https://flagcdn.com/w320/jm.png', 'created_at' => now()],
         ]);
     }
 }
