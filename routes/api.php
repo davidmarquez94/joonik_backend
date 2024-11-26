@@ -19,8 +19,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware(['api.key'])->group(function() {
+Route::middleware(['api.key'])->group(function () {
     Route::get('locations', [
-        JoonikController::class, 'locations'
+        JoonikController::class, 'locations',
     ]);
 });

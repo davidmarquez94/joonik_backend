@@ -17,13 +17,13 @@ class ApiKeyMiddleware
     {
         $api_key = $request->header('X-API-KEY');
 
-        if($api_key !== env('X_API_KEY')) {
+        if ($api_key !== env('X_API_KEY')) {
             return response()->json([
                 'success' => false,
-                'error' => __('messages.unauthorized_user')
+                'error' => __('messages.unauthorized_user'),
             ], 401);
         }
-        
+
         return $next($request);
     }
 }
