@@ -14,6 +14,6 @@ class Location extends Model
     protected $fillable = [
         'code',
         'name',
-        'image'
+        'image',
     ];
 }
